@@ -1056,13 +1056,14 @@ endef
 TARGET_DEVICES += tellstick-znet-lite
 
 define Device/ts-d084
-  $(Device/tplink-8mlzma)
-  DEVICE_TITLE := PISEN TS-D084
+  $(Device/tplink-16mlzma)
+  DEVICE_TITLE := Vpod
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2
   BOARDNAME := TS-D084
   DEVICE_PROFILE := TSD084
   TPLINK_HWID := 0x07030101
   CONSOLE := ttyATH0,115200
+  IMAGE_SIZE := 15872k
 endef
 TARGET_DEVICES += ts-d084
 
